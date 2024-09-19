@@ -1,0 +1,46 @@
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
+
+.link-style {
+    a {
+        padding: 0.4rem;
+        @include soft(1sn);
+
+        &:hover {
+            color: $secondaryColor;
+        }
+    }
+}
+
+
+footer.horizontal {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: flex-end;
+    @extend .link-style;
+}
+
+footer.vertical {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+        @extend .link-style;
+    }
+
+    .copyright {
+        position: fixed;
+        right: 1rem;
+        bottom: 1rem;
+        writing-mode: vertical-rl;
+    }
+}

@@ -1,0 +1,28 @@
+// abstracts
+@import './abstracts/mixins', './abstracts/variables';
+// base
+@import './base/reset';
+// components
+@import './components/nav', './components/footer', './components/responsive';
+// pages
+@import './pages/home', './pages/about', './pages/projects', './pages/contact';
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
+
+
+body{
+    font-family: $fontFamily;
+    background-color: $primaryColor;
+    height: 100vh;
+    line-height: 1;
+    color: $textColor;
+}
+
+a{
+    color: $textColor;
+    text-decoration: none;
+}
+
+h1,h2,h3{
+    font-weight: 400;
+}
